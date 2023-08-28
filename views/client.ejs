@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Musicas</title>
+</head>
+<body>
+  <h1>Minhas Musicas</h1>
+  <ul>
+    <% musics.forEach((music) => { %>
+    <li><%= music.title %> - <%= music.singer %></li>
+    <audio controls volume>
+        <source src= "<%= music.path %>" type="audio/mpeg">
+    </audio>
+    <% }); %>
+  </ul>
+</body>
+</html>
