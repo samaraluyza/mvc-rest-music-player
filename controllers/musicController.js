@@ -66,7 +66,6 @@ router.get("/music/:id", (req, res) => {
         res.status(200).json(musics[index]);
     }
     
-
   });
 
 
@@ -84,7 +83,7 @@ function findByKey(key, value) {
     return (item, i) => item[key] === value
 }
 
-//  pagar por id
+//  apagar por id
 router.delete("/music/:id", (req, res) => {
     var params = findByKey('id', req.params.id );
     var index = musics.findIndex(params);
@@ -98,16 +97,22 @@ router.delete("/music/:id", (req, res) => {
         res.status(200).json("Musica apagada!");
     }
 
-    
-
   });
 
 // inclui nova musica
 router.post("/music", (req, res) => {
 
     var musicPost = req.body;
-    musics.push(musicPost);
-    res.status(200).json(musics);
+
+    if(req.body==[]){
+      res.status(400).json('Corpo incompativel')
+
+    }
+    else{
+      musics.push(musicPost);
+      res.status(200).json(musics);
+    }
+
 
   });
 
