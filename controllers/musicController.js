@@ -46,7 +46,7 @@ const musics = [motivationPiano, chill, corporateHarmonics, makeItLoud];
 
 // musicas
 router.get("/", (req, res) => {
-  res.render("client", { musics});
+  res.render("musicList", { musics});
 });
 
 // Todas as musicas
