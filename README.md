@@ -4,14 +4,13 @@ Trabalho prático da disciplina de Arquitetura de BackEnd - Pós-Graduação em 
 
 Esse projeto foi desenvolvido utilizando Node.js e Express.js - O desenvolvimento foi realizado utilizando o estilo arquitetural MVC Rest
 
-Nome dos componentes do grupo:
+Nome dos integrantes do grupo:
 
 Leandro Moreira da Silva
 Leon Wagner Farias de Souza
 Jonas Lima de Amorim
 Junia Almeida Matos Boechat
 Samara Luiza da Silva
-
 
 # Inicie o Servidor
 

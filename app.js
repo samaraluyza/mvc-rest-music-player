@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
 const musicController = require('./controllers/musicController');
-//const bodyParser = require('body-parser');
+const aboutController = require('./controllers/aboutController');
 
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: true }));
 
-//app.use(bodyParser);
 app.use(express.json());
 app.use('/', musicController);
+app.use('/', aboutController);
 
 
 app.listen(3000, () => {
