@@ -12,12 +12,32 @@ Nome dos integrantes do grupo:
 - Junia Almeida Matos Boechat
 - Samara Luiza da Silva
 
-## Sobre MVC Rest
+---
+
+## <a> Índice </a>
+
+1. [Sobre MVC Rest](#sobre-mvc-rest)
+    1.1 [Estrutura de pastas](#estrutura-de-pastas)
+        1.1.1 [Models](#models)
+        1.1.2 [Views](#views)
+        1.1.3 [Controllers](#controllers)
+2. [Sobre o Express.js](#sobre-o-expressjs)
+3. [Inicie o servidor](#inicie-o-servidor)
+4. [Testes](#testes)
+    4.1 [Rotas](#rotas)
+        4.1.1 [GET](#get)
+        4.1.2 [GET by ID](#get-by-id)
+        4.1.3 [POST](#post)
+        4.1.4 [DELETE by ID](#delete-by-id)
+
+---
+
+## <a name="sobre-mvc-rest">Sobre MVC Rest </a>
 
 A combinação do MVC com REST é uma abordagem comum para
 construir APIs web, onde o MVC é usado para estruturar a aplicação em camadas e o REST é usado para projetar a comunicação entre o cliente e o servidor.
 
-### Estrutura de pastas
+### <a name="estrutura-pastas"> Estrutura de pastas </a>
 
 A aplicação foi estruturada nas pastas `controllers`, `models`, `views`.
 
@@ -48,7 +68,7 @@ A pasta `controllers` contém os scripts que possuem as rotas e que atuam como i
 
 ```
 
-#### Models
+#### <a name="model"> Models </a>
 
 Foi criado um arquivo contendo o modelo de dados da aplicação. O modelo possui informações sobre o titulo da música, o cantor, o caminho do arquivo, o ano e o álbum. Segue o modelo abaixo:
 
@@ -67,19 +87,21 @@ class Music {
 
 ```
 
-#### Views
+#### <a name="views"> Views </a>
 
 Uma visualização simples da lista de músicas foi criado. A lista é criada de forma dinâmica, de acordo com o número de músicas incluídas na base de dados. O reprodutor de áudio padrão do HTML5 foi utilizado para reproduzir as músicas.
 
 ![image](./files/view_page.png)
 
-#### Controllers
+#### <a name="controllers"> Controllers </a>
 
 No `controller` de músicas foram criadas rotas para a recuperação da lista de música, rota para recuperar somente uma música utilizando um identificador único, rota para recuperar o arquivo da música, rota para a exclusão utilizando o identificador úvico e rota para inclusão de uma nova música.
 
 No `controller` de informações sobre o projeto, foi criado uma única rota para recuperar os integrantes do grupo.
 
-## Sobre o Express.js
+---
+
+## <a name="sobre-express">Sobre o Express.js </a>
 
 Para implementar essa aplicação foi utilizado o Express.js, ele fornece o sistema de roteamento e recursos simplificados que podem ser utilizado para facilitar a implementação de aplicativos backend.
 
@@ -90,7 +112,9 @@ app.use('/', musicController);
 app.use('/', aboutController);
 ```
 
-## Inicie o Servidor
+---
+
+## <a name="iniciar-servidor">Inicie o Servidor </a>
 
 Faça download do repositório
 
@@ -108,13 +132,13 @@ No terminal, execute o seguinte comando para iniciar o servidor:
 node app.js
 ```
 
-## Testes
+## <a name="testes">Testes </a>
 
 Os testes podem ser realizados por meio do aplicativo PostMan, cmd ou um navegador.
 
-### Rotas
+### <a name="rotas">Rotas </a>
 
-#### GET
+#### <a name="get">GET </a>
 
 GET /musics
 
@@ -134,7 +158,7 @@ curl --location 'http://localhost:3000/about'
 
 ```
 
-#### GET by ID
+#### <a name="get-id">GET by ID </a>
 
 GET /music/id
 
@@ -152,7 +176,7 @@ Faz download do arquivo de uma música específica.
 curl --location 'http://localhost:3000/files/Chill.mp3'
 ```
 
-#### POST
+#### <a name="post">POST </a>
 
 POST /music
 
@@ -172,7 +196,7 @@ curl --location 'http://localhost:3000/music' \
 
 ```
 
-#### DELETE by ID
+#### <a name="delete-id">DELETE by ID </a>
 
 DELETE /music/id
 
