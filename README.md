@@ -18,7 +18,7 @@ Nome dos integrantes do grupo:
 
 1. [Sobre MVC Rest](#sobre-mvc-rest)
     + [Estrutura de pastas](#estrutura-pastas)
-        - [Models](#models)
+        - [Models](#model)
         - [Views](#views)
         - [Controllers](#controllers)
 2. [Sobre o Express.js](#sobre-o-expressjs)
