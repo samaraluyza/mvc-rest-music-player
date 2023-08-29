@@ -6,11 +6,11 @@ Esse projeto foi desenvolvido utilizando Node.js e Express.js - O desenvolviment
 
 Nome dos integrantes do grupo:
 
-Leandro Moreira da Silva
-Leon Wagner Farias de Souza
-Jonas Lima de Amorim
-Junia Almeida Matos Boechat
-Samara Luiza da Silva
+- Leandro Moreira da Silva
+- Leon Wagner Farias de Souza
+- Jonas Lima de Amorim
+- Junia Almeida Matos Boechat
+- Samara Luiza da Silva
 
 ## Sobre MVC Rest
 
