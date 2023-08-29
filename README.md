@@ -17,14 +17,14 @@ Nome dos integrantes do grupo:
 ## <a> Índice </a>
 
 1. [Sobre MVC Rest](#sobre-mvc-rest)
-    1.1 [Estrutura de pastas](#estrutura-pastas)
+    + [Estrutura de pastas](#estrutura-pastas)
         - [Models](#models)
         - [Views](#views)
         - [Controllers](#controllers)
 2. [Sobre o Express.js](#sobre-o-expressjs)
 3. [Inicie o servidor](#inicie-o-servidor)
 4. [Testes](#testes)
-    4.1 [Rotas](#rotas)
+    + [Rotas](#rotas)
         - [GET](#get)
         - [GET by ID](#get-by-id)
         - [POST](#post)
